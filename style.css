@@ -1,0 +1,110 @@
+/* Configurações gerais da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* Mantém o fundo escuro agradável */
+    color: #ffffff;
+    
+    /* Centraliza todo o conteúdo no meio da tela */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    margin: 0;
+    padding: 40px 20px;
+}
+
+.controles-tarefa {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Cria um espaçamento automático e elegante entre os elementos */
+    margin-bottom: 5px;
+}
+
+/* Título maior e centralizado */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+/* Organiza o label, input e botão em linha centralizada */
+label {
+    font-size: 1rem;
+    margin-right: 8px;
+}
+
+input {
+    margin-bottom: 5px;
+    padding: 10px 14px;
+    font-size: 1rem;
+    border: 1px solid #444;
+    border-radius: 6px;
+    outline: none;
+    background-color: #1e1e1e;
+    color: #fff;
+}
+
+/* Estilo padrão para todos os botões (Adicionar, etc.) */
+button {
+    padding: 10px 16px;
+    font-size: 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-left: 6px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo específico para o botão de Remover (fica vermelho) */
+#btnRemover {
+    background-color: #dc3545; /* Vermelho padrão de alerta/exclusão */
+}
+
+#btnRemover:hover {
+    background-color: #a71d2a; /* Um tom de vermelho mais escuro ao passar o mouse */
+}
+
+#btnAjuda {
+    background-color: grey;
+}
+
+/* Linha divisória */
+hr {
+    width: 100%;
+    max-width: 500px;
+    border: 0;
+    height: 1px;
+    background-color: #333;
+    margin: 30px 0;
+}
+
+/* Estilo para a lista que vai receber os itens */
+ul {
+    list-style: none; /* Remove as bolinhas padrão da lista */
+    padding: 0;
+    width: 100%;
+    max-width: 500px;
+}
+
+/* Estilo para cada item que será adicionado via JS */
+li {
+    background-color: #1e1e1e;
+    padding: 12px 16px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Classe que será aplicada nas tarefas concluídas */
+li.concluida {
+    text-decoration: line-through; /* Risco no meio do texto */
+    color: #888888;              /* Deixa o texto em tom de cinza */
+    opacity: 0.6;                 /* Deixa ligeiramente transparente */
+}
